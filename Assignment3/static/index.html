@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <meta http-equiv="refresh" content="10">
+    <title>Pemantauan Air & Angin</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 style="text-align: center">Water and Wind Status </h1>
+        <div class="row justify-content-around">
+            <div class=" col-xl-3 bg-primary border border-light rounded">
+                <div class="d-none d-sm-block">
+                    <h2 class="h6 text-gray-500 mb-0">Water Status</h2>
+                    <h3 class="fw-extrabold mb-2">Status : {{.waterStatus}}</h3>
+                </div>
+                <small class="d-flex align-items-center text-gray-500">
+                  Tinggi : {{.waterValue}} meter 
+                </small> 
+            </div>
+            <div class=" col-xl-3 bg-warning border border-light rounded">
+                <div class="d-none d-sm-block">
+                    <h2 class="h6 text-gray-400 mb-0">Wind Status</h2>
+                    <h3 class="fw-extrabold mb-2">Status : {{.windStatus}}</h3>
+                </div>
+                <small class="d-flex align-items-center text-gray-500">
+                  Tinggi : {{.windValue}} meter 
+                </small> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
